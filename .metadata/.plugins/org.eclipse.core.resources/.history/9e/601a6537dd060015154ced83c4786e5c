@@ -1,0 +1,440 @@
+[General]
+network = TEST_MAC
+num-rngs = 3
+sim-time-limit = 30s
+record-eventlog = true
+**.mobility.rng-0 = 1
+**.wlan[0].mac.rng-0 = 2
+
+#tkenv-plugin-path = ../../../inet/etc/plugins
+
+*.playgroundSizeX = 600m
+*.playgroundSizeY = 600m
+*.playgroundSizeZ = 0m
+
+##########################################################
+#			WorldUtility parameters                      #
+##########################################################
+**.world.useTorus = false
+
+##############################################################################
+#       Parameters for the ConnectionManager                                 #
+##############################################################################
+**.connectionManager.carrierFrequency = 2.4e+9Hz  # [Hz]
+
+# max transmission power [mW]
+**.connectionManager.pMax = 2.0mW  # [mW]
+# signal attenuation threshold [dBm]
+**.connectionManager.sat = -92.5dBm  # [dBm]
+# path loss coefficient alpha
+**.connectionManager.alpha = 2
+**.connectionManager.sendDirect = false
+
+##############################################################################
+#       Parameters for the Mobility Module                                   #
+##############################################################################
+
+**.host*.mobilityType = "inet.mobility.models.StationaryMobility"
+
+#**.drawCoverage=false
+**.constraintAreaMinX = 0m
+**.constraintAreaMinY = 0m
+**.constraintAreaMinZ = 0m
+**.constraintAreaMaxX = 600m
+**.constraintAreaMaxY = 600m
+**.constraintAreaMaxZ = 0m
+
+*.numHosts = 64
+*.numFixHosts = 0
+**.debug = true
+**.coreDebug = false
+**.arp.globalARP = true
+
+# mobility
+**.mobility.initFromDisplayString = false
+
+**.host[0].mobility.initialX = 108m
+**.host[0].mobility.initialY = 211m
+
+**.host[1].mobility.initialX = 152m
+**.host[1].mobility.initialY = 390m
+
+**.host[2].mobility.initialX = 268m
+**.host[2].mobility.initialY = 260m
+
+**.host[3].mobility.initialX = 311m
+**.host[3].mobility.initialY = 317m
+
+**.host[4].mobility.initialX = 424m
+**.host[4].mobility.initialY = 246m
+
+**.host[5].mobility.initialX = 187m
+**.host[5].mobility.initialY = 252m
+
+**.host[6].mobility.initialX = 415m
+**.host[6].mobility.initialY = 534m
+
+**.host[7].mobility.initialX = 538m
+**.host[7].mobility.initialY = 51m
+
+**.host[8].mobility.initialX = 265m
+**.host[8].mobility.initialY = 101m
+
+**.host[9].mobility.initialX = 247m
+**.host[9].mobility.initialY = 311m
+
+**.host[10].mobility.initialX = 486m
+**.host[10].mobility.initialY = 143m
+
+**.host[11].mobility.initialX = 492m
+**.host[11].mobility.initialY = 454m
+
+**.host[12].mobility.initialX = 557m
+**.host[12].mobility.initialY = 405m
+
+**.host[13].mobility.initialX = 487m
+**.host[13].mobility.initialY = 398m
+
+**.host[14].mobility.initialX = 292m
+**.host[14].mobility.initialY = 310m
+
+**.host[15].mobility.initialX = 354m
+**.host[15].mobility.initialY = 527m
+
+**.host[16].mobility.initialX = 497m
+**.host[16].mobility.initialY = 83m
+
+**.host[17].mobility.initialX = 494m
+**.host[17].mobility.initialY = 342m
+
+**.host[18].mobility.initialX = 318m
+**.host[18].mobility.initialY = 231m
+
+**.host[19].mobility.initialX = 236m
+**.host[19].mobility.initialY = 167m
+
+**.host[20].mobility.initialX = 54m
+**.host[20].mobility.initialY = 398m
+
+**.host[21].mobility.initialX = 546m
+**.host[21].mobility.initialY = 444m
+
+**.host[22].mobility.initialX = 509m
+**.host[22].mobility.initialY = 112m
+
+**.host[23].mobility.initialX = 73m
+**.host[23].mobility.initialY = 199m
+
+**.host[24].mobility.initialX = 340m
+**.host[24].mobility.initialY = 295m
+
+**.host[25].mobility.initialX = 88m
+**.host[25].mobility.initialY = 251m
+
+**.host[26].mobility.initialX = 566m
+**.host[26].mobility.initialY = 555m
+
+**.host[27].mobility.initialX = 131m
+**.host[27].mobility.initialY = 548m
+
+**.host[28].mobility.initialX = 537m
+**.host[28].mobility.initialY = 195m
+
+**.host[29].mobility.initialX = 371m
+**.host[29].mobility.initialY = 406m
+
+**.host[30].mobility.initialX = 480m
+**.host[30].mobility.initialY = 150m
+
+**.host[31].mobility.initialX = 359m
+**.host[31].mobility.initialY = 402m
+
+**.host[32].mobility.initialX = 361m
+**.host[32].mobility.initialY = 430m
+
+**.host[33].mobility.initialX = 321m
+**.host[33].mobility.initialY = 104m
+
+**.host[34].mobility.initialX = 238m
+**.host[34].mobility.initialY = 532m
+
+**.host[35].mobility.initialX = 399m
+**.host[35].mobility.initialY = 420m
+
+**.host[36].mobility.initialX = 507m
+**.host[36].mobility.initialY = 370m
+
+**.host[37].mobility.initialX = 289m
+**.host[37].mobility.initialY = 442m
+
+**.host[38].mobility.initialX = 59m
+**.host[38].mobility.initialY = 489m
+
+**.host[39].mobility.initialX = 218m
+**.host[39].mobility.initialY = 375m
+
+**.host[40].mobility.initialX = 362m
+**.host[40].mobility.initialY = 433m
+
+**.host[41].mobility.initialX = 51m
+**.host[41].mobility.initialY = 353m
+
+**.host[42].mobility.initialX = 413m
+**.host[42].mobility.initialY = 309m
+
+**.host[43].mobility.initialX = 478m
+**.host[43].mobility.initialY = 376m
+
+**.host[44].mobility.initialX = 479m
+**.host[44].mobility.initialY = 274m
+
+**.host[45].mobility.initialX = 207m
+**.host[45].mobility.initialY = 385m
+
+**.host[46].mobility.initialX = 551m
+**.host[46].mobility.initialY = 143m
+
+**.host[47].mobility.initialX = 364m
+**.host[47].mobility.initialY = 337m
+
+**.host[48].mobility.initialX = 151m
+**.host[48].mobility.initialY = 111m
+
+**.host[49].mobility.initialX = 569m
+**.host[49].mobility.initialY = 364m
+
+**.host[50].mobility.initialX = 220m
+**.host[50].mobility.initialY = 545m
+
+**.host[51].mobility.initialX = 209m
+**.host[51].mobility.initialY = 153m
+
+**.host[52].mobility.initialX = 492m
+**.host[52].mobility.initialY = 76m
+
+**.host[53].mobility.initialX = 172m
+**.host[53].mobility.initialY = 527m
+
+**.host[54].mobility.initialX = 142m
+**.host[54].mobility.initialY = 517m
+
+**.host[55].mobility.initialX = 327m
+**.host[55].mobility.initialY = 81m
+
+**.host[56].mobility.initialX = 376m
+**.host[56].mobility.initialY = 505m
+
+**.host[57].mobility.initialX = 561m
+**.host[57].mobility.initialY = 366m
+
+**.host[58].mobility.initialX = 240m
+**.host[58].mobility.initialY = 464m
+
+**.host[59].mobility.initialX = 319m
+**.host[59].mobility.initialY = 144m
+
+**.host[60].mobility.initialX = 315m
+**.host[60].mobility.initialY = 104m
+
+**.host[61].mobility.initialX = 106m
+**.host[61].mobility.initialY = 292m
+
+**.host[62].mobility.initialX = 222m
+**.host[62].mobility.initialY = 446m
+
+**.host[63].mobility.initialX = 206m
+**.host[63].mobility.initialY = 500m
+
+
+# UDP config
+# udp apps (on)
+
+
+**.host[*].udpApp[*].typename = "UDPBasicBurst"
+
+**.host[*].numUdpApps = 1
+
+**.host[23].udpApp[0].destAddresses = "host[48]"
+**.host[48].udpApp[0].destAddresses = "host[23]"
+
+**.host[25].udpApp[0].destAddresses = "host[61]"
+**.host[61].udpApp[0].destAddresses = "host[41]"
+**.host[41].udpApp[0].destAddresses = "host[45]"
+**.host[45].udpApp[0].destAddresses = "host[0]"
+**.host[0].udpApp[0].destAddresses = "host[5]"
+**.host[5].udpApp[0].destAddresses = "host[1]"
+**.host[1].udpApp[0].destAddresses = "host[25]"
+
+**.host[20].udpApp[0].destAddresses = "host[38]"
+**.host[38].udpApp[0].destAddresses = "host[63]"
+**.host[63].udpApp[0].destAddresses = "host[53]"
+**.host[53].udpApp[0].destAddresses = "host[54]"
+**.host[54].udpApp[0].destAddresses = "host[27]"
+**.host[27].udpApp[0].destAddresses = "host[20]"
+
+**.host[51].udpApp[0].destAddresses = "host[8]"
+**.host[8].udpApp[0].destAddresses = "host[19]"
+**.host[19].udpApp[0].destAddresses = "host[59]"
+**.host[59].udpApp[0].destAddresses = "host[60]"
+**.host[60].udpApp[0].destAddresses = "host[33]"
+**.host[33].udpApp[0].destAddresses = "host[55]"
+**.host[55].udpApp[0].destAddresses = "host[51]"
+
+**.host[2].udpApp[0].destAddresses = "host[3]"
+**.host[3].udpApp[0].destAddresses = "host[9]"
+**.host[9].udpApp[0].destAddresses = "host[14]"
+**.host[14].udpApp[0].destAddresses = "host[18]"
+**.host[18].udpApp[0].destAddresses = "host[24]"
+**.host[24].udpApp[0].destAddresses = "host[39]"
+**.host[39].udpApp[0].destAddresses = "host[47]"
+**.host[47].udpApp[0].destAddresses = "host[2]"
+
+**.host[15].udpApp[0].destAddresses = "host[29]"
+**.host[29].udpApp[0].destAddresses = "host[31]"
+**.host[31].udpApp[0].destAddresses = "host[32]"
+**.host[32].udpApp[0].destAddresses = "host[34]"
+**.host[34].udpApp[0].destAddresses = "host[37]"
+**.host[37].udpApp[0].destAddresses = "host[40]"
+**.host[40].udpApp[0].destAddresses = "host[50]"
+**.host[50].udpApp[0].destAddresses = "host[56]"
+**.host[56].udpApp[0].destAddresses = "host[58]"
+**.host[58].udpApp[0].destAddresses = "host[62]"
+**.host[62].udpApp[0].destAddresses = "host[15]"
+
+**.host[7].udpApp[0].destAddresses = "host[10]"
+**.host[10].udpApp[0].destAddresses = "host[16]"
+**.host[16].udpApp[0].destAddresses = "host[22]"
+**.host[22].udpApp[0].destAddresses = "host[28]"
+**.host[28].udpApp[0].destAddresses = "host[30]"
+**.host[30].udpApp[0].destAddresses = "host[46]"
+**.host[46].udpApp[0].destAddresses = "host[52]"
+**.host[52].udpApp[0].destAddresses = "host[7]"
+
+**.host[4].udpApp[0].destAddresses = "host[17]"
+**.host[17].udpApp[0].destAddresses = "host[36]"
+**.host[36].udpApp[0].destAddresses = "host[42]"
+**.host[42].udpApp[0].destAddresses = "host[43]"
+**.host[43].udpApp[0].destAddresses = "host[44]"
+**.host[44].udpApp[0].destAddresses = "host[49]"
+**.host[49].udpApp[0].destAddresses = "host[57]"
+**.host[57].udpApp[0].destAddresses = "host[4]"
+
+**.host[6].udpApp[0].destAddresses = "host[11]"
+**.host[11].udpApp[0].destAddresses = "host[12]"
+**.host[12].udpApp[0].destAddresses = "host[13]"
+**.host[13].udpApp[0].destAddresses = "host[21]"
+**.host[21].udpApp[0].destAddresses = "host[26]"
+**.host[26].udpApp[0].destAddresses = "host[35]"
+**.host[35].udpApp[0].destAddresses = "host[6]"
+
+**.host[*].udpApp[0].destAddresses = ""
+
+**.host[*].udpApp[0].localPort = 1234
+**.host[*].udpApp[0].destPort = 1234
+**.host[*].udpApp[0].messageLength = 512B
+
+**.host[*].udpApp[0].sendInterval = 1s + uniform(-0.001s,0.001s)
+
+**.host[*].udpApp[0].chooseDestAddrMode = "perSend"
+**.host[*].udpApp[0].burstDuration = 0
+**.host[*].udpApp[0].sleepDuration = 0
+**.host[*].udpApp[0].stopTime = 0s
+**.host[*].udpApp[0].startTime = 10s
+**.host[*].udpApp[0].delayLimit = 100s
+
+
+# ping app (off)
+**.numPingApps = 0
+#**.numPingApps = 1
+#**.pingApp[0].destAddr = "fixhost[0]"
+#**.pingApp[0].printPing = true
+
+# tcp settings
+**.tcp.mss = 1024
+**.tcp.advertisedWindow = 14336  # 14*mss
+#**.tcp.sendQueueClass = "TCPMsgBasedSendQueue"
+#**.tcp.receiveQueueClass = "TCPMsgBasedRcvQueue"
+**.tcp.tcpAlgorithmClass = "TCPReno"
+**.tcp.recordStats = true
+
+# ip settings
+**.ip.procDelay = 10us
+# **.IPForward=false
+
+# ARP configuration
+**.arp.cacheTimeout = 100s
+#**.networklayer.proxyARP = true  # Host's is hardwired "false"
+
+# configure routing info
+**.manetPurgeRoutingTables = true
+**.manetroutingprotocol.vector-recording=true
+
+# configure IPv4 addresses
+#**.configurator.config=xmldoc("config-ip.xml")
+**.configurator.assignDisjunctSubnetAddresses = false
+**.configurator.addDefaultRoutes = false
+**.configurator.addStaticRoutes = false
+**.configurator.addSubnetRoutes = false
+
+
+# nic settings
+##############################################################################
+#       Parameters for the Mac Layer                                         #
+##############################################################################
+
+# use MiXiM's radio model instead of the INET 802.11 implementation
+#**.wlan[*].typename = "org.mixim.modules.nic.Nic80211"
+**.wlan[*].typename = "org.mixim.modules.nic.Nic80211MultiChannel"
+
+# debug switch
+**.wlan[0].mac.headerLength = 272 bit
+##**.wlan[0].mac.queueLength = 14
+**.wlan[0].mac.bitrate = 2E+6bps# in bits/second
+**.wlan[0].mac.defaultChannel = 0
+**.wlan[0].mac.autoBitrate = false
+
+### values if no fading is modelled, gives at most 1% packet error rate
+**.wlan[0].mac.snr2Mbit = 1.46dB  # [dB]
+**.wlan[0].mac.snr5Mbit = 2.6dB  # [dB]
+**.wlan[0].mac.snr11Mbit = 5.68dB  # [dB]
+
+**.wlan[0].mac.rtsCtsThreshold = 400
+**.wlan[0].mac.neighborhoodCacheSize = 30
+**.wlan[0].mac.neighborhoodCacheMaxAge = 100s  # [s]
+
+**.wlan[0].mac.txPower = 2.0mW  # [mW]
+**.wlan[0].mac.centerFrequency = 2.4e+9Hz
+
+**.wlan[0].sleepCurrent = 3mA
+**.wlan[0].rxCurrent = 5mA
+**.wlan[0].decodingCurrentDelta = 2mA
+**.wlan[0].txCurrent = 11mA
+**.wlan[0].rxTxCurrent = 0mA # no radio switching times
+**.wlan[0].txRxCurrent = 0mA # no radio switching times
+**.wlan[0].setupRxCurrent = 0mA # no radio switching times
+**.wlan[0].setupTxCurrent = 0mA # no radio switching times
+
+##############################################################################
+#       Parameters for the Phy                                               #
+##############################################################################
+
+**.wlan[0].phy.usePropagationDelay = false
+**.wlan[0].phy.thermalNoise = -92.5dBm  # [dBm]
+**.wlan[0].phy.analogueModels = xmldoc("config.xml")
+**.wlan[0].phy.decider = xmldoc("config.xml")
+**.wlan[0].phy.sensitivity = -86.0dBm  # [dBm]
+**.wlan[0].phy.maxTXPower = 2.0mW
+**.wlan[0].phy.timeRXToTX = 0s
+**.wlan[0].phy.timeRXToSleep = 0s
+**.wlan[0].phy.timeTXToRX = 0s
+**.wlan[0].phy.timeTXToSleep = 0s
+**.wlan[0].phy.timeSleepToRX = 0s
+**.wlan[0].phy.timeSleepToTX = 0s
+**.wlan[0].phy.initialRadioState = 0
+**.wlan[0].phy.useThermalNoise = true
+
+[Config MAC_TEST_TMMAC]
+record-eventlog = false
+sim-time-limit = 20s
+repeat = 2
+**.host[*].udpApp[0].sendInterval = (${interval=1,.2,.1,.05,.0125,.01,.004,.0015,.001}s) + uniform(-0.001s,0.001s)

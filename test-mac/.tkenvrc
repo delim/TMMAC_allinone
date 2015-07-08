@@ -1,0 +1,3 @@
+# Partial Tkenv config file -- see $HOME/.tkenvrc as well
+inspector "TEST_MAC" "TEST_MAC" "2" "565x342+156+156:iconic"
+

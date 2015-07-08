@@ -1,0 +1,28 @@
+file 797 1433014694                                             
+version 2
+run Ping1-0-20150531-03:38:05-1344
+attr configname Ping1
+attr datetime 20150531-03:38:05
+attr experiment Ping1
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Adhoc
+attr processid 1344
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 12  Adhoc.host[1].pingApp[0]  pingTxSeq:vector  ETV
+attr interpolationmode  none
+attr title  "ping tx seq, vector"
+vector 14  Adhoc.host[1].networkLayer.arp  sentReq:vector  ETV
+attr title  "ARP request sent, vector"
+vector 16  Adhoc.host[1].networkLayer.arp  initiatedResolution:vector  ETV
+attr title  "ARP initiated resolutions, vector"
+12	726 23 7 7 3.371378465555 3.371378465555 1 0 0 0 0
+14	749 24 10 10 3.371378465555 3.371378465555 1 1 1 1 1
+16	773 24 10 10 3.371378465555 3.371378465555 1 1 1 1 1

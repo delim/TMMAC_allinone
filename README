@@ -1,0 +1,11 @@
+This model bundle contains:
+
+- INET Framework 2.1
+- MiXiM 2.3
+
+MiXiM is configured to work with the bundled INET version.
+
+Quick Installation: 
+- Select this folder as the workspace from the OMNeT++ IDE.
+- Build the INET and MiXiM projects.
+- explore the INET specific samples is 'examples-inet'

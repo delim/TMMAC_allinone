@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;test-mac/omnet.ini&apos; to &apos;omnetpp.ini&apos;" description="Rename resource &apos;omnet.ini&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="omnet.ini" name="omnetpp.ini" stamp="1432990517719" updateReferences="true"/>
+</session>
